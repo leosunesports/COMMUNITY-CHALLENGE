@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leosun Community Challenge</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo-box">
+            <img src="logo.png" alt="Leosun Esports">
+        </div>
+
+        <div class="header-text">
+            <h1>COMMUNITY CHALLENGE</h1>
+            <p>Endless Random Valorant Challenges</p>
+        </div>
+
+    </header>
+
+
+    <!-- START SCREEN -->
+    <section id="setupScreen" class="card">
+
+        <h2>READY?</h2>
+
+        <p class="subtitle">
+            Enter your streamer name and start the chaos.
+        </p>
+
+        <input
+            type="text"
+            id="playerName"
+            placeholder="Enter streamer name..."
+            maxlength="30"
+        >
+
+        <br>
+
+        <button id="startBtn" class="primary-btn">
+            START CHALLENGE
+        </button>
+
+        <p class="small-text">
+            Endless challenges. Maximum chaos.
+        </p>
+
+    </section>
+
+
+    <!-- GAME SCREEN -->
+    <section id="gameScreen" class="hidden">
+
+        <!-- PLAYER INFO -->
+        <div class="top-info">
+
+            <div class="info-box">
+                <span>PLAYER</span>
+                <strong id="displayName">Streamer</strong>
+            </div>
+
+            <div class="info-box">
+                <span>COMPLETED</span>
+                <strong id="completedCount">0</strong>
+            </div>
+
+        </div>
+
+
+        <!-- PROMOTION -->
+        <div class="promo-card">
+
+            <div class="promo-tag">
+                SUPPORT THE STREAM
+            </div>
+
+            <div id="promoText">
+                ❤️ Enjoying the stream? Like, follow & subscribe!
+            </div>
+
+        </div>
+
+
+        <!-- CHALLENGE -->
+        <div class="challenge-card">
+
+            <div class="challenge-label">
+                RANDOM CHALLENGE
+            </div>
+
+            <div id="challengeText">
+                Click the button to get your challenge.
+            </div>
+
+            <div id="challengeNumber">
+                Challenge 1
+            </div>
+
+        </div>
+
+
+        <!-- BUTTONS -->
+        <div class="buttons">
+
+            <button
+                id="randomBtn"
+                class="primary-btn"
+            >
+                🎲 GET RANDOM CHALLENGE
+            </button>
+
+            <button
+                id="completeBtn"
+                class="complete-btn hidden"
+            >
+                ✓ CHALLENGE COMPLETED
+            </button>
+
+        </div>
+
+
+        <!-- COMPLETED CHALLENGES -->
+        <div class="completed-section">
+
+            <h3>Completed Challenges</h3>
+
+            <div id="completedList"></div>
+
+        </div>
+
+
+        <!-- LEOSUN PROMOTION -->
+        <div class="leosun-promo">
+
+            <div class="leosun-promo-logo">
+                <img src="logo.png" alt="Leosun">
+            </div>
+
+            <div class="leosun-promo-text">
+
+                <strong>
+                    POWERED BY LEOSUN ESPORTS
+                </strong>
+
+                <span>
+                    Follow Leosun for esports, tournaments,
+                    creators & community events.
+                </span>
+
+            </div>
+
+            <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="follow-btn"
+            >
+                FOLLOW LEOSUN
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- MEME OVERLAY -->
+    <div id="memeOverlay" class="meme-overlay hidden">
+
+        <div class="meme-box">
+
+            <button
+                id="closeMemeBtn"
+                class="close-meme"
+            >
+                ✕
+            </button>
+
+            <div class="meme-title">
+                😂 RANDOM MEME
+            </div>
+
+            <video
+                id="memeVideo"
+                playsinline
+                preload="auto"
+            >
+                Your browser does not support video.
+            </video>
+
+            <button
+                id="skipMemeBtn"
+                class="skip-meme"
+            >
+                SKIP MEME
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>LEOSUN ESPORTS</p>
+
+        <span>
+            Community • Esports • Creators
+        </span>
+
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
